@@ -13,12 +13,16 @@ const Steps = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className={`h-[150px] sm:h-[200px] md:h-[300px] w-full  flex gap-4 justify-between my-8 text-sm ${
+            className={`h-[150px] sm:h-[200px] md:h-[300px] w-full  flex gap-4 md:gap-8 justify-between my-8 text-sm ${
               index % 2 ? "" : "flex-row-reverse"
             }`}
           >
             <div className="content h-full border-l-2 border-primary-orange pl-2 flex flex-col justify-between">
-              <span className="text-primary-blue text-4xl md:text-6xl text-nowrap">
+              <span
+                className={`text-primary-blue text-4xl md:text-6xl text-nowrap ${
+                  index % 2 ? "" : "text-right"
+                }`}
+              >
                 {step.count}
               </span>
               <div className="text flex flex-col gap-1">
