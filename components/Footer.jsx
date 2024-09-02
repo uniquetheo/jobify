@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="divider border-y"></div>
         <div className="flex w-full justify-between px-4 sm:px-8 lg:px-12 py-4 sm:py-4 lg:py-6">
           <div className="text-muted-foreground">
-            <span>&copy; Jobify {new Date().getFullYear()}</span>
+            <span>&copy; {new Date().getFullYear()} Jobify</span>
           </div>
           <div className="flex gap-4 text-muted-foreground">
             {socials.map((item, idx) => (
