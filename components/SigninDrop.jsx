@@ -12,7 +12,7 @@ const SigninDrop = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button>
+        <Button className="">
           <span className="flex gap-2">
             Sign in
             <ArrowDown />

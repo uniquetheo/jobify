@@ -32,7 +32,7 @@ const SignUpForm = () => {
         />
         <button
           type="submit"
-          className="px-4 py-2 border rounded bg-blue-500 hover:blue-500/80 text-white cursor-pointer"
+          className="px-4 py-2 border rounded bg-primary-blue hover:blue-500/80 text-white cursor-pointer"
         >
           Sign up
         </button>

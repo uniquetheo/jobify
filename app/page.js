@@ -8,12 +8,12 @@ export default function Home() {
       <section>
         <HeroSection />
       </section>
-      <div className="grid grid-cols-1 lg:grid-cols-[882px_1fr]">
+      <div className="grid grid-cols-1 xl:grid-cols-[882px_1fr]">
 
       <section className="px-4 sm:px-6 md:px-8 lg:px-12">
         <Steps />
       </section>
-      <section className="p-4 sm:p-6 md:p-8 lg:p-12">
+      <section className="p-4 sm:p-6 md:p-8 lg:p-12 mx-auto">
         <SignUpForm />
       </section>
       </div>

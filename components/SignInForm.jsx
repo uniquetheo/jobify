@@ -24,12 +24,12 @@ const SignInForm = () => {
           placeholder="Password"
           className="text-sm border py-2 px-4 rounded"
         />
-        <button
+        <Button
           type="submit"
-          className="px-4 py-2 border rounded bg-blue-500 hover:blue-500/80 text-white cursor-pointer"
+          className="px-4 py-2 border rounded bg-primary-blue hover:blue-500/80 text-white cursor-pointer"
         >
           Sign in
-        </button>
+        </Button>
         <div className="flex gap-4 w-full h-full items-center">
           <span className="border-y w-full "></span>
           <span className="text-muted-foreground">or</span>

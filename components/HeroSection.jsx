@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="w-full h-full flex justify-center items-center p-4 sm:px-8 md:px-12">
           <div className="flex flex-col gap-4 md:gap-8 h-full justify-center w-full">
-            <span className={`text-xs uppercase font-bold text-primary-orange`}>
+            <span className={`text-xs md:text-sm uppercase font-bold text-primary-orange`}>
               Empower Your Career Journey
             </span>
             <div className="aspect-w-1 aspect-h-1 w-full max-w-xs font-bold flex flex-col">
@@ -24,13 +24,13 @@ const HeroSection = () => {
                 search with Jobify.
               </span>
             </div>
-            <span>
+            <span className="md:text-xl">
               Create professional CVs and cover letters effortlessly. With our
               intuitive tools, you can land your dream job faster—no design
               skills needed. Start building your future in just a few clicks.
             </span>
             <div>
-              <Button>Start Now</Button>
+              <Button className="bg-primary-blue md:text-xl">Start Now</Button>
             </div>
           </div>
         </div>
@@ -47,21 +47,21 @@ const HeroSection = () => {
             </div>
             <div className="">
               <Image
-                className="absolute object-contain w-[65px] -top-[20px] left-[125px] "
+                className="absolute object-contain w-[65px]  lg:w-[107px]  -top-[20px] left-[125px] "
                 src="/../fill.svg"
                 width="107"
                 height="109"
                 alt="art"
               />
               <Image
-                className="absolute object-contain w-[75px] bottom-[15px] "
+                className="absolute object-contain w-[75px]  lg:w-[125px] bottom-[15px] lg:bottom-[30px] lg:left-[10px]"
                 src="/../round.svg"
                 width="125"
                 height="108"
                 alt="art"
               />
               <Image
-                className="absolute object-contain w-[16px] bottom-[30px] right-[20px] z-20"
+                className="absolute object-contain w-[16px]  lg:w-[25px] bottom-[30px] lg:bottom-[50px] right-[20px]  lg:right-[35px] z-20"
                 src="/../waves.svg"
                 width="25"
                 height="79"
