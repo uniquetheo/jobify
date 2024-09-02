@@ -8,14 +8,15 @@ export default function Home() {
       <section>
         <HeroSection />
       </section>
+      <div className="grid grid-cols-1 lg:grid-cols-[882px_1fr]">
+
       <section className="px-4 sm:px-6 md:px-8 lg:px-12">
         <Steps />
       </section>
-      {/* <section>Testimonials section</section> */}
-      {/* <section>Contact Us Section</section> */}
       <section className="p-4 sm:p-6 md:p-8 lg:p-12">
         <SignUpForm />
       </section>
+      </div>
     </main>
   );
 }

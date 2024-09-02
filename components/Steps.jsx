@@ -3,28 +3,35 @@ import { steps } from "../data/essential";
 
 const Steps = () => {
   return (
-    <div className="py-6">
+    <div className="py-6 w-full max-w-[882px] mx-auto">
       <div className="">
         <span className="text-xs uppercase font-bold text-primary-orange">
           4 Easy Steps
         </span>
       </div>
-      <div className="">
+      <div className="w-full">
         {steps.map((step, index) => (
-          <div key={index} className="h-[150px] flex my-8 gap-4 text-sm ">
+          <div
+            key={index}
+            className={`h-[150px] sm:h-[200px] md:h-[300px] w-full  flex gap-4 justify-between my-8 text-sm ${
+              index % 2 ? "" : "flex-row-reverse"
+            }`}
+          >
             <div className="content h-full border-l-2 border-primary-orange pl-2 flex flex-col justify-between">
-              <span className="text-primary-blue text-4xl text-nowrap">
+              <span className="text-primary-blue text-4xl md:text-6xl text-nowrap">
                 {step.count}
               </span>
               <div className="text flex flex-col gap-1">
-                <span className="font-bold">{step.title}</span>
-                <span className="text-xs text-muted-foreground">
+                <span className="font-bold sm:text-lg md:text-xl">
+                  {step.title}
+                </span>
+                <span className="text-xs sm:text-sm md:text-lg text-muted-foreground">
                   {step.description}
                 </span>
               </div>
             </div>
             <div className="image">
-              <div className="container w-[150px] h-[150px] border border-gray-400 rounded-[36px] flex items-center justify-center relative overflow-hidden">
+              <div className="container w-[150px] h-[150px] sm:h-[200px] sm:w-[200px] md:h-[300px] md:w-[300px] border border-gray-400 rounded-[36px] flex items-center justify-center relative overflow-hidden">
                 <div className="inner ">
                   <Image
                     className="object-cover"
