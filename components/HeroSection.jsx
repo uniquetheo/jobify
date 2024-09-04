@@ -9,7 +9,7 @@ const gilda = Gilda_Display({
 
 const HeroSection = () => {
   return (
-    <div className="w-full lg:h-[calc(100vh-80px)] min-h-full">
+    <div className="w-full lg:h-[calc(100vh-80px)] min-h-full bg-hero-pattern">
       <div className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="w-full h-full flex justify-center items-center p-4 sm:px-8 md:px-12">
           <div className="flex flex-col gap-4 md:gap-8 h-full justify-center w-full">

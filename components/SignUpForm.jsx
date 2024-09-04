@@ -1,11 +1,30 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 const SignUpForm = () => {
-  const signUp = (event) => {
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const signUp = async (event) => {
     event.preventDefault();
+    const email = event.target.email.value;
+    console.log("new email:::", email);
+    // try {
+    //   const res = await fetch("api/sign-up", {
+    //     method: "POST",
+    //     body: JSON.stringify(userData),
+    //   }).then((res)=>console.log(res));
+
+    // } catch (error) {
+    //   console.error(error.message);
+    // }
   };
+
   return (
     <div className="min-w-[375px] bg-transparent">
       <form
@@ -16,18 +35,36 @@ const SignUpForm = () => {
           type="email"
           name="email"
           placeholder="Email"
+          value={userData.email}
+          onChange={(e) =>
+            setUserData((prev) => {
+              return { ...prev, email: e.target.value };
+            })
+          }
           className="text-sm border py-2 px-4 rounded"
         />
         <input
           type="password"
           name="password"
           placeholder="Password"
+          value={userData.password}
+          onChange={(e) =>
+            setUserData((prev) => {
+              return { ...prev, password: e.target.value };
+            })
+          }
           className="text-sm border py-2 px-4 rounded"
         />
         <input
           type="password"
           name="confirm-password"
           placeholder="Confirm Password"
+          value={userData.confirmPassword}
+          onChange={(e) =>
+            setUserData((prev) => {
+              return { ...prev, confirmPassword: e.target.value };
+            })
+          }
           className="text-sm border py-2 px-4 rounded"
         />
         <button

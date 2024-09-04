@@ -1,19 +1,33 @@
 import {
+  BanIcon,
+  Banknote,
+  BookTemplate,
+  DollarSign,
+  GalleryHorizontal,
+  Images,
+  PlayIcon,
+  Settings,
+  User,
+} from "lucide-react";
+import {
   FaFacebookF,
   FaInstagram,
+  FaStar,
   FaTiktok,
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa";
 
 export const primaryMenu = [
-  { name: "My Profile", link: "/profile", slug: "profile" },
-  { name: "Settings", link: "/settings", slug: "settings" },
+  { name: "Dashboard", link: "/dashboard", icon: <GalleryHorizontal /> },
+  { name: "My Profile", link: "/dashboard/profile", icon: <User /> },
   {
     name: "Template Gallery",
-    link: "/template-gallery",
-    slug: "template-gallery",
+    link: "/dashboard/template-gallery",
+    icon: <Images />,
   },
+  { name: "My Plan", link: "/plan", icon: <Banknote /> },
+  { name: "Settings", link: "/dashboard/settings", icon: <Settings /> },
 ];
 
 // export const secondaryMenu = [
