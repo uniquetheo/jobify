@@ -1,13 +1,14 @@
-import React from 'react'
+import Layout from "../../../components/Layout";
 
 const ProfilePage = () => {
   return (
-    <div>ProfilePage</div>
-  )
-}
+    <Layout>
+      <div>ProfilePage</div>
+    </Layout>
+  );
+};
 
 export default ProfilePage;
-
 
 // Purpose: Allow users to enter and update their personal information, which will be used to populate the CV and cover letter templates.
 // Content:

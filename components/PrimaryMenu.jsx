@@ -13,9 +13,9 @@ const PrimaryMenu = () => {
         <Link
           key={index}
           href={item.link}
-          className={` rounded p-3 border-l-4 ${
+          className={` rounded p-3 border-l-4 border-y hover:text-primary-orange/80 ${
             pathname === item.link
-              ? "border border-l-primary-orange bg-[#e8effd]"
+              ? "border border-l-primary-orange bg-[#e8effd] text-primary-orange"
               : ""
           }`}
         >

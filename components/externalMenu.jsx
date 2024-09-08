@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import SigninDrop from "./SigninDrop";
 import Logo from "./logo";
-// import logoicon from '/LogoIcon.svg'
 
 const ExternalMenu = () => {
   return (

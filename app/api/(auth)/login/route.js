@@ -1,4 +1,7 @@
 import { NextResponse } from "next/server";
+import User from "/models/Users";
+import connect from "/utils/db";
+import bcrypt from "bcryptjs";
 
 export const GET = async () => {
   //action
@@ -8,10 +11,10 @@ export const GET = async () => {
 
 export const POST = async (request) => {
   try {
-    const body = await request.json();
-    return NextResponse.json({message: "got here", body: body})
+    const { email, password } = await request.json();
+
+    await connect();
   } catch (error) {
-    return NextResponse.json({ message: error.message })
+    return NextResponse.json({ message: error.message });
   }
-  ;
 };

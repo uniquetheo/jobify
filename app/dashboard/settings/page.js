@@ -1,10 +1,12 @@
-import React from 'react'
+import Layout from "../../../components/Layout";
 
 const SettingsPage = () => {
   return (
-    <div>SettingsPage</div>
-  )
-}
+    <Layout>
+      <div>SettingsPage</div>
+    </Layout>
+  );
+};
 
 export default SettingsPage;
 

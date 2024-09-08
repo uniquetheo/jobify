@@ -1,5 +1,6 @@
 "use client";
 
+import DashHeader from "./DashHeader";
 import { useState } from "react";
 import SideBar from "../components/SideBar";
 
@@ -8,12 +9,15 @@ const Layout = ({ children }) => {
 
   return (
     <div
-      className={`grid  w-full min-h-screen grid-cols-[${
-        open ? "250" : "50"
-      }px_1fr] `}
+      className={`grid  w-full min-h-screen ${
+        open ? "grid-cols-[250px_1fr]" : "grid-cols-[50px_1fr]"
+      } `}
     >
       <SideBar />
-      {children}
+      <div className="flex flex-col min-h-screen">
+        <DashHeader />
+        <div className="">{children}</div>
+      </div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import PrimaryMenu from "./PrimaryMenu";
 
 const SideBar = (open) => {
   return (
-    <div className="left-0 h-full border shadow-lg">
+    <div className="left-0 h-full border shadow-lg bg-white">
       <div className="flex flex-col gap-4 w-full">
         <div className="p-4">
           <Link
@@ -17,9 +17,9 @@ const SideBar = (open) => {
             <span>Jobify</span>
           </Link>
         </div>
-        <div className="p-4">
+        {/* <div className="p-4">
           <span>Search anything...</span>
-        </div>
+        </div> */}
         <div className="p-4 menu">
           <PrimaryMenu />
         </div>

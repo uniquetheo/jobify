@@ -26,7 +26,7 @@ export const primaryMenu = [
     link: "/dashboard/template-gallery",
     icon: <Images />,
   },
-  { name: "My Plan", link: "/plan", icon: <Banknote /> },
+  { name: "My Plan", link: "/dashboard/plan", icon: <Banknote /> },
   { name: "Settings", link: "/dashboard/settings", icon: <Settings /> },
 ];
 

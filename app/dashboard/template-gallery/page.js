@@ -1,13 +1,14 @@
-import React from 'react'
+import Layout from "../../../components/Layout";
 
 const TemplateGalleryPage = () => {
   return (
-    <div>Template Gallery Page</div>
-  )
-}
+    <Layout>
+      <div>Template Gallery Page</div>
+    </Layout>
+  );
+};
 
 export default TemplateGalleryPage;
-
 
 // Purpose: Showcase the available CV and cover letter templates for users to choose from.
 // Content:
