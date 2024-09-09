@@ -13,7 +13,9 @@ const HeroSection = () => {
       <div className="w-full h-full flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="w-full h-full flex justify-center items-center p-4 sm:px-8 md:px-12">
           <div className="flex flex-col gap-4 md:gap-8 h-full justify-center w-full">
-            <span className={`text-xs md:text-sm uppercase font-bold text-primary-orange`}>
+            <span
+              className={`text-xs md:text-sm uppercase font-bold text-primary-orange`}
+            >
               Empower Your Career Journey
             </span>
             <div className="aspect-w-1 aspect-h-1 w-full max-w-xs font-bold flex flex-col">
@@ -36,7 +38,7 @@ const HeroSection = () => {
         </div>
         <div className="w-full h-full  flex items-center justify-center p-4 sm:p-8 md:p-12 ">
           <div className="relative aspect-square w-full mx-8 xl:mx-12">
-            <div className="w-full h-full overflow-hidden">
+            <div className="w-full h-full absolute overflow-hidden">
               <Image
                 className="object-cover w-full h-full rounded-full over` z-10"
                 src="/../hero-woman.jpg"
@@ -54,7 +56,7 @@ const HeroSection = () => {
                 alt="art"
               />
               <Image
-                className="absolute object-contain w-[75px]  lg:w-[125px] bottom-[15px] lg:bottom-[30px] lg:left-[10px]"
+                className="absolute object-contain w-[75px] h-auto  lg:w-[125px] bottom-[15px] lg:bottom-[30px] lg:left-[10px]"
                 src="/../round.svg"
                 width="125"
                 height="108"

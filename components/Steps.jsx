@@ -36,7 +36,7 @@ const Steps = () => {
             </div>
             <div className="image">
               <div className="container w-[150px] h-[150px] sm:h-[200px] sm:w-[200px] md:h-[300px] md:w-[300px] border border-gray-400 rounded-[36px] flex items-center justify-center relative overflow-hidden">
-                <div className="inner ">
+                <div className="inner absolute w-full h-full">
                   <Image
                     className="object-cover"
                     src={step.image}
