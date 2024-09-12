@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import SigninDrop from "./SigninDrop";
 import Logo from "./logo";
+import { Button } from "./ui/button";
 
 const ExternalMenu = () => {
   return (
@@ -14,7 +15,10 @@ const ExternalMenu = () => {
           <Logo />
           <span>JOBIFY</span>
         </Link>
-        <SigninDrop />
+        {/* <SigninDrop /> */}
+        <Link href="/api/auth/signin">
+          <Button>Sign in</Button>
+        </Link>
       </div>
     </nav>
   );
