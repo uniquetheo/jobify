@@ -42,7 +42,8 @@ const Steps = () => {
                     src={step.image}
                     alt={step.count}
                     fill
-                    unoptimized
+                    // unoptimized
+                    sizes="auto"
                   />
                 </div>
               </div>

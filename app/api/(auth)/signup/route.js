@@ -25,7 +25,11 @@ export const POST = async (request) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 5);
-    const newUser = new User({ name: name, email, password: hashedPassword });
+    const newUser = new User({
+      name,
+      email: email.toLowerCase(),
+      password: hashedPassword,
+    });
 
     try {
       await newUser.save();

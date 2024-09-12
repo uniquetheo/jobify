@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   const session = getServerSession();
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <SessionProvider session={session}>{children}</SessionProvider>
-      </body>
+      <SessionProvider session={session}>
+        <body className={`${inter.className} antialiased`}>{children}</body>
+      </SessionProvider>
     </html>
   );
 }

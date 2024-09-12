@@ -43,6 +43,7 @@ const HeroSection = () => {
                 className="object-cover w-full h-full rounded-full over` z-10"
                 src="/../hero-woman.jpg"
                 fill
+                // sizes="auto"
                 unoptimized
                 alt="hero"
               />
